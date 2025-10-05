@@ -1,0 +1,86 @@
+---
+layout: base.njk
+title: Home
+---
+
+<div class="mb-16 animate-slide-up">
+  <div class="text-center mb-8">
+    <h1 class="text-6xl font-bold gradient-text mb-6 animate-fade-in">
+      Welcome to My Blog
+    </h1>
+    <p class="text-2xl text-slate-700 font-light max-w-2xl mx-auto leading-relaxed">
+      🚀 Sharing my thoughts on web development, design, and the art of crafting digital experiences.
+    </p>
+  </div>
+
+  <!-- Feature highlights -->
+  <div class="grid md:grid-cols-3 gap-8 mb-16">
+    <div class="glass-effect rounded-2xl p-8 text-center card-hover animate-fade-in" style="animation-delay: 0.1s;">
+      <div class="text-4xl mb-4">⚡</div>
+      <h3 class="text-xl font-semibold text-slate-800 mb-3">Lightning Fast</h3>
+      <p class="text-slate-600">Built with modern tools for optimal performance and user experience.</p>
+    </div>
+    <div class="glass-effect rounded-2xl p-8 text-center card-hover animate-fade-in" style="animation-delay: 0.2s;">
+      <div class="text-4xl mb-4">🎨</div>
+      <h3 class="text-xl font-semibold text-slate-800 mb-3">Beautifully Designed</h3>
+      <p class="text-slate-600">Clean, modern aesthetics with attention to every detail.</p>
+    </div>
+    <div class="glass-effect rounded-2xl p-8 text-center card-hover animate-fade-in" style="animation-delay: 0.3s;">
+      <div class="text-4xl mb-4">📱</div>
+      <h3 class="text-xl font-semibold text-slate-800 mb-3">Responsive</h3>
+      <p class="text-slate-600">Perfect experience across all devices and screen sizes.</p>
+    </div>
+  </div>
+</div>
+
+{% if collections.posts.length > 0 %}
+  <div class="space-y-8 animate-slide-up" style="animation-delay: 0.4s;">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-slate-800 mb-4">📝 Recent Posts</h2>
+      <p class="text-slate-600 text-lg">Latest insights and tutorials</p>
+    </div>
+
+    {% for post in collections.posts %}
+      <article class="glass-effect rounded-2xl p-8 card-hover animate-fade-in group" style="animation-delay: {{ loop.index * 0.1 }}s;">
+        <div class="flex flex-col md:flex-row md:items-center justify-between mb-6">
+          <div class="mb-4 md:mb-0">
+            <h3 class="text-3xl font-bold mb-3 group-hover:text-indigo-600 transition-colors duration-200">
+              <a href="{{ post.url }}" class="text-slate-800 hover:text-indigo-600">
+                {{ post.data.title }}
+              </a>
+            </h3>
+            <div class="flex items-center text-slate-500 text-sm space-x-4">
+              <span class="flex items-center">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+                {{ post.data.date | dateFormat }}
+              </span>
+              <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-medium">Article</span>
+            </div>
+          </div>
+          <a href="{{ post.url }}" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group/btn">
+            Read more
+            <svg class="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <p class="text-slate-700 text-lg leading-relaxed">{{ post.data.description }}</p>
+      </article>
+    {% endfor %}
+  </div>
+{% else %}
+  <div class="text-center py-20 animate-fade-in">
+    <div class="glass-effect rounded-2xl p-12 max-w-md mx-auto">
+      <div class="text-6xl mb-6">✍️</div>
+      <h3 class="text-2xl font-bold text-slate-800 mb-4">No Posts Yet</h3>
+      <p class="text-slate-600 mb-6">The adventure is about to begin! Check back soon for the first post.</p>
+      <div class="flex justify-center space-x-2">
+        <div class="w-2 h-2 bg-indigo-400 rounded-full animate-bounce"></div>
+        <div class="w-2 h-2 bg-purple-400 rounded-full animate-bounce" style="animation-delay: 0.1s;"></div>
+        <div class="w-2 h-2 bg-pink-400 rounded-full animate-bounce" style="animation-delay: 0.2s;"></div>
+      </div>
+    </div>
+  </div>
+{% endif %}

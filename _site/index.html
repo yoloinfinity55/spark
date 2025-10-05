@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - My Blog</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 antialiased min-h-screen">
+  <!-- Animated background elements -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-full blur-3xl animate-float"></div>
+    <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-blue-400/20 to-cyan-400/20 rounded-full blur-3xl animate-float" style="animation-delay: -3s;"></div>
+  </div>
+
+  <nav class="glass-effect sticky top-0 z-50 border-b border-white/20 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-4 py-5">
+      <div class="flex justify-between items-center">
+        <a href="/" class="text-3xl font-bold gradient-text animate-fade-in">✨ My Blog</a>
+        <div class="flex items-center space-x-1">
+          <a href="/" class="px-4 py-2 text-slate-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-lg hover:bg-white/50">
+            Home
+          </a>
+          <a href="/about" class="px-4 py-2 text-slate-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-lg hover:bg-white/50">
+            About
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-4 py-12 relative z-10">
+    <div class="animate-fade-in">
+      
+<div class="mb-16 animate-slide-up">
+  <div class="text-center mb-8">
+    <h1 class="text-6xl font-bold gradient-text mb-6 animate-fade-in">
+      Welcome to My Blog
+    </h1>
+    <p class="text-2xl text-slate-700 font-light max-w-2xl mx-auto leading-relaxed">
+      🚀 Sharing my thoughts on web development, design, and the art of crafting digital experiences.
+    </p>
+  </div>
+
+  <!-- Feature highlights -->
+  <div class="grid md:grid-cols-3 gap-8 mb-16">
+    <div class="glass-effect rounded-2xl p-8 text-center card-hover animate-fade-in" style="animation-delay: 0.1s;">
+      <div class="text-4xl mb-4">⚡</div>
+      <h3 class="text-xl font-semibold text-slate-800 mb-3">Lightning Fast</h3>
+      <p class="text-slate-600">Built with modern tools for optimal performance and user experience.</p>
+    </div>
+    <div class="glass-effect rounded-2xl p-8 text-center card-hover animate-fade-in" style="animation-delay: 0.2s;">
+      <div class="text-4xl mb-4">🎨</div>
+      <h3 class="text-xl font-semibold text-slate-800 mb-3">Beautifully Designed</h3>
+      <p class="text-slate-600">Clean, modern aesthetics with attention to every detail.</p>
+    </div>
+    <div class="glass-effect rounded-2xl p-8 text-center card-hover animate-fade-in" style="animation-delay: 0.3s;">
+      <div class="text-4xl mb-4">📱</div>
+      <h3 class="text-xl font-semibold text-slate-800 mb-3">Responsive</h3>
+      <p class="text-slate-600">Perfect experience across all devices and screen sizes.</p>
+    </div>
+  </div>
+</div>
+
+
+  <div class="space-y-8 animate-slide-up" style="animation-delay: 0.4s;">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-slate-800 mb-4">📝 Recent Posts</h2>
+      <p class="text-slate-600 text-lg">Latest insights and tutorials</p>
+    </div>
+
+    
+      <article class="glass-effect rounded-2xl p-8 card-hover animate-fade-in group" style="animation-delay: 0.1s;">
+        <div class="flex flex-col md:flex-row md:items-center justify-between mb-6">
+          <div class="mb-4 md:mb-0">
+            <h3 class="text-3xl font-bold mb-3 group-hover:text-indigo-600 transition-colors duration-200">
+              <a href="/posts/second-post/" class="text-slate-800 hover:text-indigo-600">
+                Getting Started with Static Sites
+              </a>
+            </h3>
+            <div class="flex items-center text-slate-500 text-sm space-x-4">
+              <span class="flex items-center">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+                January 31, 2025
+              </span>
+              <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-medium">Article</span>
+            </div>
+          </div>
+          <a href="/posts/second-post/" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group/btn">
+            Read more
+            <svg class="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <p class="text-slate-700 text-lg leading-relaxed">Learn why static site generators are great for blogs.</p>
+      </article>
+    
+      <article class="glass-effect rounded-2xl p-8 card-hover animate-fade-in group" style="animation-delay: 0.2s;">
+        <div class="flex flex-col md:flex-row md:items-center justify-between mb-6">
+          <div class="mb-4 md:mb-0">
+            <h3 class="text-3xl font-bold mb-3 group-hover:text-indigo-600 transition-colors duration-200">
+              <a href="/posts/first-post/" class="text-slate-800 hover:text-indigo-600">
+                My First Blog Post
+              </a>
+            </h3>
+            <div class="flex items-center text-slate-500 text-sm space-x-4">
+              <span class="flex items-center">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+                January 14, 2025
+              </span>
+              <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-medium">Article</span>
+            </div>
+          </div>
+          <a href="/posts/first-post/" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group/btn">
+            Read more
+            <svg class="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <p class="text-slate-700 text-lg leading-relaxed">This is my very first blog post using Eleventy and Tailwind CSS.</p>
+      </article>
+    
+  </div>
+
+
+    </div>
+  </main>
+
+  <footer class="glass-effect border-t border-white/20 mt-20 relative z-10">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-center">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-slate-600 font-medium">
+          &copy; 2025 My Blog. Built with ✨ Eleventy & Tailwind CSS v4
+        </p>
+        <div class="flex items-center space-x-6 mt-4 md:mt-0">
+          <span class="text-sm text-slate-500">Made with ❤️</span>
+          <div class="flex space-x-2">
+            <div class="w-2 h-2 bg-indigo-400 rounded-full animate-pulse"></div>
+            <div class="w-2 h-2 bg-purple-400 rounded-full animate-pulse" style="animation-delay: 0.2s;"></div>
+            <div class="w-2 h-2 bg-pink-400 rounded-full animate-pulse" style="animation-delay: 0.4s;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

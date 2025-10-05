@@ -1,0 +1,22 @@
+{
+  "name": "spark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "build": "eleventy",
+  "start": "eleventy --serve",
+  "dev": "eleventy --serve"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@tailwindcss/postcss": "^4.1.14",
+    "cssnano": "^7.1.1",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.14"
+  }
+}

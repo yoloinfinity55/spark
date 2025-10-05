@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} - My Blog</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 antialiased min-h-screen">
+  <!-- Animated background elements -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-full blur-3xl animate-float"></div>
+    <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-blue-400/20 to-cyan-400/20 rounded-full blur-3xl animate-float" style="animation-delay: -3s;"></div>
+  </div>
+
+  <nav class="glass-effect sticky top-0 z-50 border-b border-white/20 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-4 py-5">
+      <div class="flex justify-between items-center">
+        <a href="/" class="text-3xl font-bold gradient-text animate-fade-in">✨ My Blog</a>
+        <div class="flex items-center space-x-1">
+          <a href="/" class="px-4 py-2 text-slate-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-lg hover:bg-white/50">
+            Home
+          </a>
+          <a href="/about" class="px-4 py-2 text-slate-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-lg hover:bg-white/50">
+            About
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-4 py-12 relative z-10">
+    <div class="animate-fade-in">
+      {{ content | safe }}
+    </div>
+  </main>
+
+  <footer class="glass-effect border-t border-white/20 mt-20 relative z-10">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-center">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-slate-600 font-medium">
+          &copy; 2025 My Blog. Built with ✨ Eleventy & Tailwind CSS v4
+        </p>
+        <div class="flex items-center space-x-6 mt-4 md:mt-0">
+          <span class="text-sm text-slate-500">Made with ❤️</span>
+          <div class="flex space-x-2">
+            <div class="w-2 h-2 bg-indigo-400 rounded-full animate-pulse"></div>
+            <div class="w-2 h-2 bg-purple-400 rounded-full animate-pulse" style="animation-delay: 0.2s;"></div>
+            <div class="w-2 h-2 bg-pink-400 rounded-full animate-pulse" style="animation-delay: 0.4s;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
