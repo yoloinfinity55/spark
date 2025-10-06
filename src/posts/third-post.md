@@ -16,10 +16,12 @@ Below is a curated list of 30 beginner-friendly Eleventy (11ty) tutorials publis
 1. [**Eleventy · Cloudflare Pages docs**](https://developers.cloudflare.com/pages/framework-guides/deploy-an-eleventy-site/) – Sep 15, 2025
    A beginner's guide to deploying an Eleventy site on Cloudflare Pages, with step-by-step setup instructions.
 
- 
- 
+
+
 2. [**Updates to the Eleventy guide: Beginner Edition**](https://renkotsuban.com/posts/2025-07-25-Updates-to-the-Eleventy-guide.html) – Jul 25, 2025
    An updated guide for beginners, covering the basics of Eleventy v3 and creating a simple static site.
+
+
 
 3. [**I Really Love 11ty: Beginner Tips and Tricks**](https://gregordy.medium.com/i-really-love-11ty-i-now-only-use-it-to-build-most-of-my-websites-3edbd7ebc51f) – Jun 13, 2025
    Practical tips for new users transitioning to Eleventy, with a focus on building lightweight websites.
