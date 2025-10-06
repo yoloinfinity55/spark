@@ -12,6 +12,7 @@ Eleventy (简称 11ty) 是一个轻量级的静态站点生成器，适合初学
 💡 **推荐学习路径**：官方频道 → 入门教程 → 动手实践  
 
 📺 **推荐 YouTube 频道**  
+
 1️⃣ **Eleventy 官方频道**  
    特色：短视频快速入门指南  
    亮点："Start Your Escape from WordPress Using 11ty (in 3 minutes!)"、图像优化教程（如 "Learn how to Optimize your Web Site's Images with Eleventy Image"）  
@@ -34,7 +35,8 @@ Eleventy (简称 11ty) 是一个轻量级的静态站点生成器，适合初学
    [https://www.youtube.com/c/KevinPowell](https://www.youtube.com/c/KevinPowell)  
 
 🚀 **推荐入门教程（2025 年更新）**  
-📚 **New to Eleventy? Eleventy for Beginners 播放列表**  
+
+1️⃣ **New to Eleventy? Eleventy for Beginners 播放列表**  
    类型：完整新手系列教程（约 13 视频）  
    内容：项目设置 → 布局创建 → Nunjucks 模板使用，包括 Kevin Powell 的 JAMStack 博客教程和崩溃课程（Crash Course）  
    时长：多视频系列，总时长超过 2 小时，步步拆解  
