@@ -52,6 +52,7 @@ export default function (eleventyConfig) {
       input: "src",
       output: "_site",
       includes: "_includes"
-    }
+    },
+    pathPrefix: "/spark"
   };
 }
