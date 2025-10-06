@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: Eleventy (11ty) 入门 YouTube 资源
-description: This is my very first blog post using Eleventy and Tailwind CSS.
+description: 2025年最新Eleventy入门指南和YouTube资源推荐，适合初学者快速上手构建静态网站。
 date: 2025-10-05
 ---
 
@@ -86,3 +86,13 @@ date: 2025-10-05
 ---
 
 *Happy Learning! 🚀*
+
+> **作者简介**
+>
+> Written by Author
+>
+> Passionate web developer and designer, sharing insights about modern web technologies and best practices for creating amazing digital experiences.
+>
+> © 2025 Spark Blog. Built with ⚡ Eleventy & Tailwind CSS v4
+>
+> Made with ❤️
