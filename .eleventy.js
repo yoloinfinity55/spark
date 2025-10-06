@@ -16,19 +16,18 @@ export default function (eleventyConfig) {
   eleventyConfig.on('eleventy.before', async () => {
     const tailwindInputPath = path.resolve('./src/css/input.css');
     const tailwindOutputPath = './_site/css/styles.css';
-
     const cssContent = fs.readFileSync(tailwindInputPath, 'utf8');
-
     const outputDir = path.dirname(tailwindOutputPath);
+    
     if (!fs.existsSync(outputDir)) {
       fs.mkdirSync(outputDir, { recursive: true });
     }
-
+    
     const result = await processor.process(cssContent, {
       from: tailwindInputPath,
       to: tailwindOutputPath,
     });
-
+    
     fs.writeFileSync(tailwindOutputPath, result.css);
   });
 
@@ -52,6 +51,8 @@ export default function (eleventyConfig) {
       input: "src",
       output: "_site",
       includes: "_includes"
-    }
+    },
+    // Add pathPrefix - uses /spark/ for production, / for local development
+    pathPrefix: process.env.ELEVENTY_ENV === 'production' ? '/spark/' : '/'
   };
 }

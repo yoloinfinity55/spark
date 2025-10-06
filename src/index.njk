@@ -45,7 +45,7 @@ title: Home
         <div class="flex flex-col md:flex-row md:items-center justify-between mb-6">
           <div class="mb-4 md:mb-0">
             <h3 class="text-3xl font-bold mb-3 group-hover:text-indigo-600 transition-colors duration-200">
-              <a href="{{ post.url }}" class="text-slate-800 hover:text-indigo-600">
+              <a href="{{ post.url | url }}" class="text-slate-800 hover:text-indigo-600">
                 {{ post.data.title }}
               </a>
             </h3>
@@ -59,7 +59,7 @@ title: Home
               <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-medium">Article</span>
             </div>
           </div>
-          <a href="{{ post.url }}" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group/btn">
+          <a href="{{ post.url | url }}" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group/btn">
             Read more
             <svg class="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
