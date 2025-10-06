@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "build": "ELEVENTY_ENV=production eleventy",
-  "start": "eleventy --serve",
-  "dev": "eleventy --serve"
-},
+    "build": "ELEVENTY_ENV=production eleventy",
+    "start": "eleventy --serve",
+    "dev": "eleventy --serve"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -18,5 +18,8 @@
     "cssnano": "^7.1.1",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.14"
+  },
+  "dependencies": {
+    "eleventy-plugin-embed-everything": "^1.21.0"
   }
 }

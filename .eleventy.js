@@ -3,6 +3,7 @@ import path from 'path';
 import postcss from 'postcss';
 import tailwindcss from '@tailwindcss/postcss';
 import cssnano from 'cssnano';
+import embedEverything from 'eleventy-plugin-embed-everything';
 
 const processor = postcss([
   tailwindcss(),
@@ -12,6 +13,16 @@ const processor = postcss([
 ]);
 
 export default function (eleventyConfig) {
+  // Add the embed plugin for YouTube and other embeds
+  eleventyConfig.addPlugin(embedEverything, {
+    // Optional: Customize YouTube embeds (e.g., enable fullscreen)
+    youtube: {
+      options: {
+        allowFullscreen: true  // Default is true; set false if preferred
+      }
+    }
+  });
+
   // Process Tailwind CSS before each Eleventy build
   eleventyConfig.on('eleventy.before', async () => {
     const tailwindInputPath = path.resolve('./src/css/input.css');
