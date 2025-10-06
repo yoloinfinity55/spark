@@ -28,6 +28,24 @@ layout: base.njk
   </header>
 
   <div class="prose prose-xl prose-slate max-w-none animate-fade-in" style="animation-delay: 0.2s; line-height: 1.8;">
+    <style>
+      .prose p {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+      }
+      .prose p:first-child {
+        margin-top: 0;
+      }
+      .prose p:last-child {
+        margin-bottom: 0;
+      }
+      .prose p:empty {
+        min-height: 1.2em;
+      }
+      .prose p:empty::after {
+        content: "\00A0";
+      }
+    </style>
     {{ content | safe }}
   </div>
 

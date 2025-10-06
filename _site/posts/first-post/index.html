@@ -58,6 +58,24 @@
   </header>
 
   <div class="prose prose-xl prose-slate max-w-none animate-fade-in" style="animation-delay: 0.2s; line-height: 1.8;">
+    <style>
+      .prose p {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+      }
+      .prose p:first-child {
+        margin-top: 0;
+      }
+      .prose p:last-child {
+        margin-bottom: 0;
+      }
+      .prose p:empty {
+        min-height: 1.2em;
+      }
+      .prose p:empty::after {
+        content: "\00A0";
+      }
+    </style>
     <p>🎯 <strong>Eleventy (11ty) 入门指南 - 2025 年最新 YouTube 资源</strong></p>
 <p>Eleventy (简称 11ty) 是一个轻量级的静态站点生成器，适合初学者快速上手构建网站。<br>
 以下是我基于 2025 年最新内容推荐的 YouTube 频道和教程。这些资源聚焦入门级内容，包括项目设置、模板使用和实际构建，适合零基础用户。推荐优先从官方和社区频道入手。</p>

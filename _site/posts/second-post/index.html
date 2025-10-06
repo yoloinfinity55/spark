@@ -58,6 +58,24 @@
   </header>
 
   <div class="prose prose-xl prose-slate max-w-none animate-fade-in" style="animation-delay: 0.2s; line-height: 1.8;">
+    <style>
+      .prose p {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+      }
+      .prose p:first-child {
+        margin-top: 0;
+      }
+      .prose p:last-child {
+        margin-bottom: 0;
+      }
+      .prose p:empty {
+        min-height: 1.2em;
+      }
+      .prose p:empty::after {
+        content: "\00A0";
+      }
+    </style>
     <p>当你按照教程将 Eleventy (11ty) 网站部署到 GitHub Pages 时，通常会遵循一系列步骤，包括创建部署分支和设置 GitHub Actions 自动化工作流。然而，在这个过程中，有几个关键点常常引起混淆，甚至导致部署失败。</p>
 <p>本文将总结两个在部署过程中遇到的真实问题，帮助你避开这些常见的“坑”。</p>
 <h2>问题一：<code>gh-pages</code> 分支真的是“可选”的吗？</h2>

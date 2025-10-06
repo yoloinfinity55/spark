@@ -2,7 +2,7 @@
 layout: post.njk
 title: "将 Eleventy 网站部署到 GitHub Pages 的常见问题解析"
 date: 2025-10-06
-description: Learn why static site generators are great for blogs.
+description: 解决将 Eleventy 网站部署到 GitHub Pages 时遇到的常见问题，包括分支设置、令牌配置和文章链接 404 错误。
 ---
 
 当你按照教程将 Eleventy (11ty) 网站部署到 GitHub Pages 时，通常会遵循一系列步骤，包括创建部署分支和设置 GitHub Actions 自动化工作流。然而，在这个过程中，有几个关键点常常引起混淆，甚至导致部署失败。

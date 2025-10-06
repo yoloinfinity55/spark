@@ -1,5 +1,6 @@
 ---
 title: "( Plain text list ) Eleventy (11ty) beginner tutorials for 2025"
+description: A comprehensive plain text list of 30 beginner-friendly Eleventy tutorials for 2025, including titles, dates, and direct URLs for easy reference.
 date: 2025-10-06
 layout: post
 ---
@@ -156,6 +157,3 @@ URL: https://egghead.io/q/11ty
 Title: Better 11ty Development with Tooling
 Date: Not specified (timeless resource, relevant for 2025)
 URL: https://www.jetbrains.com/guide/javascript/tutorials/eleventy-tsx/
-
-
-

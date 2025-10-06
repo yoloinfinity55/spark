@@ -12,49 +12,52 @@ Below is a curated list of 30 beginner-friendly Eleventy (11ty) tutorials publis
 
 ## Tutorials
 
-1. [**Eleventy · Cloudflare Pages docs**](https://developers.cloudflare.com/pages/framework-guides/deploy-an-eleventy-site/) – Sep 15, 2025  
+
+1. [**Eleventy · Cloudflare Pages docs**](https://developers.cloudflare.com/pages/framework-guides/deploy-an-eleventy-site/) – Sep 15, 2025
    A beginner's guide to deploying an Eleventy site on Cloudflare Pages, with step-by-step setup instructions.
 
-2. [**Updates to the Eleventy guide: Beginner Edition**](https://renkotsuban.com/posts/2025-07-25-Updates-to-the-Eleventy-guide.html) – Jul 25, 2025  
+ 
+ 
+2. [**Updates to the Eleventy guide: Beginner Edition**](https://renkotsuban.com/posts/2025-07-25-Updates-to-the-Eleventy-guide.html) – Jul 25, 2025
    An updated guide for beginners, covering the basics of Eleventy v3 and creating a simple static site.
 
-3. [**I Really Love 11ty: Beginner Tips and Tricks**](https://gregordy.medium.com/i-really-love-11ty-i-now-only-use-it-to-build-most-of-my-websites-3edbd7ebc51f) – Jun 13, 2025  
+3. [**I Really Love 11ty: Beginner Tips and Tricks**](https://gregordy.medium.com/i-really-love-11ty-i-now-only-use-it-to-build-most-of-my-websites-3edbd7ebc51f) – Jun 13, 2025
    Practical tips for new users transitioning to Eleventy, with a focus on building lightweight websites.
 
-4. [**The Power of Eleventy.js (11ty): A Beginner's Guide to Static Site Generation**](https://medium.com/@amalhan43/the-power-of-eleventy-js-11ty-a-beginners-guide-to-static-site-generation-2dbf27a39ac9) – May 15, 2025  
+4. [**The Power of Eleventy.js (11ty): A Beginner's Guide to Static Site Generation**](https://medium.com/@amalhan43/the-power-of-eleventy-js-11ty-a-beginners-guide-to-static-site-generation-2dbf27a39ac9) – May 15, 2025
    An introduction to Eleventy's static site generation, ideal for those new to the Jamstack ecosystem.
 
-5. [**How I Run Eleventy (It's Complicated?)**](https://meiert.com/blog/how-i-run-eleventy/) – Apr 18, 2025  
+5. [**How I Run Eleventy (It's Complicated?)**](https://meiert.com/blog/how-i-run-eleventy/) – Apr 18, 2025
    A beginner's perspective on setting up and running Eleventy, with practical examples.
 
-6. [**Static Site Generator - 11ty v3 Tutorial**](https://dev.to/climentea/11ty-static-site-generator-tutorial-11ty-v3-15g3) – Mar 23, 2025  
+6. [**Static Site Generator - 11ty v3 Tutorial**](https://dev.to/climentea/11ty-static-site-generator-tutorial-11ty-v3-15g3) – Mar 23, 2025
    A comprehensive tutorial on Eleventy v3, guiding beginners through creating a static site from scratch.
 
-7. [**Creating a Journal With Eleventy**](https://www.simplethread.com/creating-a-journal-with-eleventy/) – Mar 25, 2025  
+7. [**Creating a Journal With Eleventy**](https://www.simplethread.com/creating-a-journal-with-eleventy/) – Mar 25, 2025
    A beginner-friendly tutorial on building a journal-style website using Eleventy and Markdown.
 
-8. [**Moving to Eleventy: Beginner Learning Path**](https://troz.net/post/2025/eleventy/) – Mar 19, 2025  
+8. [**Moving to Eleventy: Beginner Learning Path**](https://troz.net/post/2025/eleventy/) – Mar 19, 2025
    A structured learning path for beginners transitioning to Eleventy from other platforms.
 
-9. [**Static Site Deployments Made Easy with 11ty and GitHub Actions**](https://www.youtube.com/watch?v=OQJAX-Ce1YY) – Mar 27, 2025  
+9. [**Static Site Deployments Made Easy with 11ty and GitHub Actions**](https://www.youtube.com/watch?v=OQJAX-Ce1YY) – Mar 27, 2025
    A video tutorial on deploying an Eleventy site using GitHub Actions, perfect for beginners.
 
-10. [**Build Personal Blog Easy with 11ty.js**](https://dev.to/heterl0/build-personal-blog-easy-with-11tyjs-388o) – Feb 20, 2025  
+10. [**Build Personal Blog Easy with 11ty.js**](https://dev.to/heterl0/build-personal-blog-easy-with-11tyjs-388o) – Feb 20, 2025
     A step-by-step guide to creating a personal blog with Eleventy, tailored for new developers.
 
-11. [**Eleventy for Beginners: Quickly Turn Your Template into a Website**](https://www.youtube.com/watch?v=praV5l5KqG0) – Feb 15, 2025  
+11. [**Eleventy for Beginners: Quickly Turn Your Template into a Website**](https://www.youtube.com/watch?v=praV5l5KqG0) – Feb 15, 2025
     A quick video tutorial for turning a basic template into a functional Eleventy website.
 
-12. [**Create a Blogging Platform With No Backend Using 11ty**](https://medium.com/@shinjithkanhangad/create-a-blogging-platform-with-no-backend-zero-hosting-charge-0363bd5cd9d5) – Jan 26, 2025  
+12. [**Create a Blogging Platform With No Backend Using 11ty**](https://medium.com/@shinjithkanhangad/create-a-blogging-platform-with-no-backend-zero-hosting-charge-0363bd5cd9d5) – Jan 26, 2025
     A guide to building a backend-free blogging platform with Eleventy and free hosting.
 
-13. [**Long-term WordPress User Tries Building with 11ty**](https://www.youtube.com/watch?v=Ixxszvj9GKw) – Jan 23, 2025  
+13. [**Long-term WordPress User Tries Building with 11ty**](https://www.youtube.com/watch?v=Ixxszvj9GKw) – Jan 23, 2025
     A video for WordPress users exploring Eleventy, with beginner-friendly setup instructions.
 
-14. [**Start Your Escape from WordPress Using 11ty (in 3 Minutes!)**](https://www.youtube.com/watch?v=WuH5QYCdh6w) – Jan 15, 2025  
+14. [**Start Your Escape from WordPress Using 11ty (in 3 Minutes!)**](https://www.youtube.com/watch?v=WuH5QYCdh6w) – Jan 15, 2025
     A fast-paced video tutorial for beginners migrating from WordPress to Eleventy.
 
-15. [**How To Build and Host an 11ty Site**](https://polluterofminds.medium.com/how-to-build-and-host-an-11ty-site-a8cec7796551) – Jan 9, 2025  
+15. [**How To Build and Host an 11ty Site**](https://polluterofminds.medium.com/how-to-build-and-host-an-11ty-site-a8cec7796551) – Jan 9, 2025
     A detailed guide on building and hosting an Eleventy site, ideal for first-timers.
 
 16. [**Getting Started — Eleventy**](https://www.11ty.dev/docs/)  
