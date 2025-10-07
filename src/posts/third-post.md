@@ -26,8 +26,12 @@ Below is a curated list of 30 beginner-friendly Eleventy (11ty) tutorials publis
 3. [**I Really Love 11ty: Beginner Tips and Tricks**](https://gregordy.medium.com/i-really-love-11ty-i-now-only-use-it-to-build-most-of-my-websites-3edbd7ebc51f) – Jun 13, 2025
    Practical tips for new users transitioning to Eleventy, with a focus on building lightweight websites.
 
+   
+
 4. [**The Power of Eleventy.js (11ty): A Beginner's Guide to Static Site Generation**](https://medium.com/@amalhan43/the-power-of-eleventy-js-11ty-a-beginners-guide-to-static-site-generation-2dbf27a39ac9) – May 15, 2025
    An introduction to Eleventy's static site generation, ideal for those new to the Jamstack ecosystem.
+
+   
 
 5. [**How I Run Eleventy (It's Complicated?)**](https://meiert.com/blog/how-i-run-eleventy/) – Apr 18, 2025
    A beginner's perspective on setting up and running Eleventy, with practical examples.
