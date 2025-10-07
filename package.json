@@ -6,7 +6,8 @@
   "scripts": {
     "build": "ELEVENTY_ENV=production eleventy",
     "start": "eleventy --serve",
-    "dev": "eleventy --serve"
+    "dev": "eleventy --serve",
+    "generate:descriptions": "node generate-descriptions.js"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,9 @@
     "tailwindcss": "^4.1.14"
   },
   "dependencies": {
-    "eleventy-plugin-embed-everything": "^1.21.0"
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^17.2.3",
+    "eleventy-plugin-embed-everything": "^1.21.0",
+    "gray-matter": "^4.0.3"
   }
 }
