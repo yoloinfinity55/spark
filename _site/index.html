@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home - Spark Blog</title>
-<link rel="stylesheet" href="/spark/css/styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Spark Blog</title>
+  <meta name="description" content="A modern blog built with Eleventy and Tailwind CSS">
+  <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body class="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 antialiased min-h-screen">
-<!-- Animated background elements -->
-<div class="fixed inset-0 overflow-hidden pointer-events-none">
-<div class="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-full blur-3xl animate-float"></div>
-<div class="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-blue-400/20 to-cyan-400/20 rounded-full blur-3xl animate-float-delayed"></div>
-</div>
-<nav class="glass-effect sticky top-0 z-50 border-b border-white/20 backdrop-blur-md">
-<div class="max-w-6xl mx-auto px-4 py-5">
-<div class="flex justify-between items-center">
-<a href="/spark/" class="text-3xl font-bold gradient-text animate-fade-in">⚡ Spark Blog</a>
-<div class="flex items-center space-x-1">
-<a href="/spark/" class="px-4 py-2 text-slate-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-lg hover:bg-white/50">
- Home
-</a>
-<a href="/spark/about" class="px-4 py-2 text-slate-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-lg hover:bg-white/50">
- About
-</a>
-</div>
-</div>
-</div>
-</nav>
-<main class="max-w-6xl mx-auto px-4 py-12 relative z-10">
-<div class="animate-fade-in prose max-w-none">
+  
+  <!-- Animated background elements -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-full blur-3xl animate-float"></div>
+    <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-blue-400/20 to-cyan-400/20 rounded-full blur-3xl animate-float-delayed"></div>
+  </div>
 
+  <!-- Navigation -->
+  <nav class="glass-effect sticky top-0 z-50 border-b border-white/20 backdrop-blur-md">
+  <div class="max-w-6xl mx-auto px-4 py-5 flex justify-between items-center">
+    <!-- Logo -->
+    <a href="/" class="text-3xl font-bold gradient-text animate-fade-in">
+      ⚡ Spark Blog
+    </a>
+    <!-- Navbar links -->
+    <div class="flex items-center space-x-1">
+      <a href="/" class="px-4 py-2 text-slate-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-lg hover:bg-white/50">
+        Blog
+      </a>
+      <a href="/about" class="px-4 py-2 text-slate-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-lg hover:bg-white/50">
+        About
+      </a>
+      <a href="/search" class="px-4 py-2 text-slate-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-lg hover:bg-white/50">
+        Search
+      </a>
+      <a href="https://twitter.com/mydailylivemail" target="_blank" class="px-4 py-2 text-slate-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-lg hover:bg-white/50">
+        Twitter
+      </a>
+      <a href="https://github.com/yoloinfinity55" target="_blank" class="px-4 py-2 text-slate-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-lg hover:bg-white/50">
+        GitHub
+      </a>
+      <a href="/rss.xml" class="px-4 py-2 text-slate-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-lg hover:bg-white/50">
+        RSS
+      </a>
+    </div>
+  </div>
+</nav>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto px-4 py-12 relative z-10">
+    
 
   <div class="animate-slide-up" style="animation-delay: 0.4s;">
 
@@ -41,7 +60,7 @@
         <article class="glass-effect rounded-2xl p-8 card-hover animate-fade-in group flex flex-col justify-between" style="animation-delay: 0.1s;">
           <div>
             <h3 class="text-2xl font-bold mb-3 group-hover:text-indigo-600 transition-colors duration-200">
-              <a href="/spark/posts/2025-10-07-Understanding the Issue/" class="text-slate-800 hover:text-indigo-600">
+              <a href="/posts/2025-10-07-Understanding the Issue/" class="text-slate-800 hover:text-indigo-600">
                 Understanding the Issue
               </a>
             </h3>
@@ -60,7 +79,7 @@
 
           <!-- Centered Read More Button -->
           <div class="mt-6 flex justify-center">
-            <a href="/spark/posts/2025-10-07-Understanding the Issue/" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group/btn">
+            <a href="/posts/2025-10-07-Understanding the Issue/" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group/btn">
               Read more
               <svg class="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -72,7 +91,7 @@
         <article class="glass-effect rounded-2xl p-8 card-hover animate-fade-in group flex flex-col justify-between" style="animation-delay: 0.2s;">
           <div>
             <h3 class="text-2xl font-bold mb-3 group-hover:text-indigo-600 transition-colors duration-200">
-              <a href="/spark/posts/2025-10-07-diagnose/" class="text-slate-800 hover:text-indigo-600">
+              <a href="/posts/2025-10-07-diagnose/" class="text-slate-800 hover:text-indigo-600">
                 Understanding the Diagnostics
               </a>
             </h3>
@@ -91,7 +110,7 @@
 
           <!-- Centered Read More Button -->
           <div class="mt-6 flex justify-center">
-            <a href="/spark/posts/2025-10-07-diagnose/" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group/btn">
+            <a href="/posts/2025-10-07-diagnose/" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group/btn">
               Read more
               <svg class="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -103,7 +122,7 @@
         <article class="glass-effect rounded-2xl p-8 card-hover animate-fade-in group flex flex-col justify-between" style="animation-delay: 0.30000000000000004s;">
           <div>
             <h3 class="text-2xl font-bold mb-3 group-hover:text-indigo-600 transition-colors duration-200">
-              <a href="/spark/posts/2025-10-06-01/" class="text-slate-800 hover:text-indigo-600">
+              <a href="/posts/2025-10-06-01/" class="text-slate-800 hover:text-indigo-600">
                 Project Flux - Specification Document
               </a>
             </h3>
@@ -122,7 +141,7 @@
 
           <!-- Centered Read More Button -->
           <div class="mt-6 flex justify-center">
-            <a href="/spark/posts/2025-10-06-01/" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group/btn">
+            <a href="/posts/2025-10-06-01/" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group/btn">
               Read more
               <svg class="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -134,7 +153,7 @@
         <article class="glass-effect rounded-2xl p-8 card-hover animate-fade-in group flex flex-col justify-between" style="animation-delay: 0.4s;">
           <div>
             <h3 class="text-2xl font-bold mb-3 group-hover:text-indigo-600 transition-colors duration-200">
-              <a href="/spark/posts/2025-10-06-sop-flux/" class="text-slate-800 hover:text-indigo-600">
+              <a href="/posts/2025-10-06-sop-flux/" class="text-slate-800 hover:text-indigo-600">
                 Project Flux - Standard Operating Procedures (SOP)
               </a>
             </h3>
@@ -153,7 +172,7 @@
 
           <!-- Centered Read More Button -->
           <div class="mt-6 flex justify-center">
-            <a href="/spark/posts/2025-10-06-sop-flux/" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group/btn">
+            <a href="/posts/2025-10-06-sop-flux/" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group/btn">
               Read more
               <svg class="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -165,7 +184,7 @@
         <article class="glass-effect rounded-2xl p-8 card-hover animate-fade-in group flex flex-col justify-between" style="animation-delay: 0.5s;">
           <div>
             <h3 class="text-2xl font-bold mb-3 group-hover:text-indigo-600 transition-colors duration-200">
-              <a href="/spark/posts/2025-10-07-wwkly-tw93-fun/" class="text-slate-800 hover:text-indigo-600">
+              <a href="/posts/2025-10-07-wwkly-tw93-fun/" class="text-slate-800 hover:text-indigo-600">
                 潮流周刊
               </a>
             </h3>
@@ -184,7 +203,7 @@
 
           <!-- Centered Read More Button -->
           <div class="mt-6 flex justify-center">
-            <a href="/spark/posts/2025-10-07-wwkly-tw93-fun/" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group/btn">
+            <a href="/posts/2025-10-07-wwkly-tw93-fun/" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group/btn">
               Read more
               <svg class="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -196,7 +215,7 @@
         <article class="glass-effect rounded-2xl p-8 card-hover animate-fade-in group flex flex-col justify-between" style="animation-delay: 0.6000000000000001s;">
           <div>
             <h3 class="text-2xl font-bold mb-3 group-hover:text-indigo-600 transition-colors duration-200">
-              <a href="/spark/posts/30-Newest-Eleventy-Tutorials-2025/" class="text-slate-800 hover:text-indigo-600">
+              <a href="/posts/30-Newest-Eleventy-Tutorials-2025/" class="text-slate-800 hover:text-indigo-600">
                 30 Newest Eleventy (11ty) Beginner Tutorials for 2025
               </a>
             </h3>
@@ -215,7 +234,7 @@
 
           <!-- Centered Read More Button -->
           <div class="mt-6 flex justify-center">
-            <a href="/spark/posts/30-Newest-Eleventy-Tutorials-2025/" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group/btn">
+            <a href="/posts/30-Newest-Eleventy-Tutorials-2025/" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group/btn">
               Read more
               <svg class="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -227,7 +246,7 @@
         <article class="glass-effect rounded-2xl p-8 card-hover animate-fade-in group flex flex-col justify-between" style="animation-delay: 0.7000000000000001s;">
           <div>
             <h3 class="text-2xl font-bold mb-3 group-hover:text-indigo-600 transition-colors duration-200">
-              <a href="/spark/posts/first-post/" class="text-slate-800 hover:text-indigo-600">
+              <a href="/posts/first-post/" class="text-slate-800 hover:text-indigo-600">
                 Eleventy (11ty) 入门指南 - 2025 年最新 YouTube 资源
               </a>
             </h3>
@@ -246,7 +265,7 @@
 
           <!-- Centered Read More Button -->
           <div class="mt-6 flex justify-center">
-            <a href="/spark/posts/first-post/" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group/btn">
+            <a href="/posts/first-post/" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group/btn">
               Read more
               <svg class="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -258,7 +277,7 @@
         <article class="glass-effect rounded-2xl p-8 card-hover animate-fade-in group flex flex-col justify-between" style="animation-delay: 0.8s;">
           <div>
             <h3 class="text-2xl font-bold mb-3 group-hover:text-indigo-600 transition-colors duration-200">
-              <a href="/spark/posts/fourth-post/" class="text-slate-800 hover:text-indigo-600">
+              <a href="/posts/fourth-post/" class="text-slate-800 hover:text-indigo-600">
                 ( Plain text list ) Eleventy (11ty) beginner tutorials for 2025
               </a>
             </h3>
@@ -277,7 +296,7 @@
 
           <!-- Centered Read More Button -->
           <div class="mt-6 flex justify-center">
-            <a href="/spark/posts/fourth-post/" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group/btn">
+            <a href="/posts/fourth-post/" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group/btn">
               Read more
               <svg class="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -289,7 +308,7 @@
         <article class="glass-effect rounded-2xl p-8 card-hover animate-fade-in group flex flex-col justify-between" style="animation-delay: 0.9s;">
           <div>
             <h3 class="text-2xl font-bold mb-3 group-hover:text-indigo-600 transition-colors duration-200">
-              <a href="/spark/posts/second-post/" class="text-slate-800 hover:text-indigo-600">
+              <a href="/posts/second-post/" class="text-slate-800 hover:text-indigo-600">
                 将 Eleventy 网站部署到 GitHub Pages 的常见问题解析
               </a>
             </h3>
@@ -308,7 +327,7 @@
 
           <!-- Centered Read More Button -->
           <div class="mt-6 flex justify-center">
-            <a href="/spark/posts/second-post/" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group/btn">
+            <a href="/posts/second-post/" class="btn-primary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group/btn">
               Read more
               <svg class="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -321,17 +340,26 @@
   </div>
 
 
-</div>
-</main>
-<footer class="glass-effect border-t border-white/20 mt-20 relative z-10">
-<div class="max-w-6xl mx-auto px-4 py-8 text-center">
-<div class="flex flex-col md:flex-row justify-between items-center">
-<p class="text-slate-600 font-medium">
-&copy; 2025 Spark Blog. Built with ⚡ Eleventy & Tailwind CSS v4
-</p>
-<div class="flex items-center space-x-6 mt-4 md:mt-0">
-<span class="text-sm text-slate-500">Made with ❤️</span>
-<div class="flex space-x-2">
-<div class="w-2 h-2 bg-indigo-400 rounded-full animate-pulse"></div>
-<div class="w-2 h-2 bg-purple-400 rounded-full animate-pulse-delayed-1"></div>
-<div class="w-2 h-2 bg-pink-400 round
+  </main>
+
+  <!-- Footer -->
+  <footer class="glass-effect border-t border-white/20 mt-20 relative z-10">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-center">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-slate-600 font-medium">
+          &copy; 2025 Spark Blog. Built with ⚡ Eleventy & Tailwind CSS v4
+        </p>
+        <div class="flex items-center space-x-6 mt-4 md:mt-0">
+          <span class="text-sm text-slate-500">Made with ❤️</span>
+          <div class="flex space-x-2">
+            <div class="w-2 h-2 bg-indigo-400 rounded-full animate-pulse"></div>
+            <div class="w-2 h-2 bg-purple-400 rounded-full animate-pulse" style="animation-delay: 0.2s;"></div>
+            <div class="w-2 h-2 bg-pink-400 rounded-full animate-pulse" style="animation-delay: 0.4s;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

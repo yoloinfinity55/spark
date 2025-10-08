@@ -1,7 +1,7 @@
 ---
 title: Understanding the Issue
 date: 2025-10-07T00:00:00.000Z
-layout: post
+layout: post.njk
 description: >-
   Fix linter warnings by replacing inline `animation-delay` styles with custom
   Tailwind CSS utilities. A simple guide to cleaner, more maintainable code for

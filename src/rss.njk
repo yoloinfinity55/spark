@@ -1,0 +1,23 @@
+---
+permalink: /rss.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spark Blog</title>
+    <link>{{ metadata.url or 'https://yourusername.github.io/spark/' }}</link>
+    <description>A modern blog built with Eleventy and Tailwind CSS</description>
+    <language>en</language>
+    <atom:link href="{{ metadata.url or 'https://yourusername.github.io/spark/' }}{{ '/rss.xml' | url }}" rel="self" type="application/rss+xml"/>
+    {% for post in collections.posts | reverse %}
+    <item>
+      <title>{{ post.data.title }}</title>
+      <link>{{ metadata.url or 'https://yourusername.github.io/spark/' }}{{ post.url }}</link>
+      <description>{{ post.data.description or post.templateContent | striptags | truncate(200) }}</description>
+      <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
+      <guid>{{ metadata.url or 'https://yourusername.github.io/spark/' }}{{ post.url }}</guid>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

@@ -15,10 +15,9 @@ const processor = postcss([
 export default function (eleventyConfig) {
   // Add the embed plugin for YouTube and other embeds
   eleventyConfig.addPlugin(embedEverything, {
-    // Optional: Customize YouTube embeds (e.g., enable fullscreen)
     youtube: {
       options: {
-        allowFullscreen: true  // Default is true; set false if preferred
+        allowFullscreen: true
       }
     }
   });
@@ -42,6 +41,14 @@ export default function (eleventyConfig) {
     fs.writeFileSync(tailwindOutputPath, result.css);
   });
 
+  // Add filter to strip HTML tags
+  eleventyConfig.addFilter("striptags", function(content) {
+    return (content || "")
+      .replace(/<[^>]*>/g, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+  });
+
   // Add a collection for blog posts, sorted by date descending
   eleventyConfig.addCollection("posts", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/posts/*.md")
@@ -57,13 +64,17 @@ export default function (eleventyConfig) {
     });
   });
 
+  // Add RSS date filter
+  eleventyConfig.addFilter("dateToRfc822", function(date) {
+    return new Date(date).toUTCString();
+  });
+
   return {
     dir: {
       input: "src",
       output: "_site",
       includes: "_includes"
     },
-    // Add pathPrefix - uses /spark/ for production, / for local development
     pathPrefix: process.env.ELEVENTY_ENV === 'production' ? '/spark/' : '/'
   };
 }

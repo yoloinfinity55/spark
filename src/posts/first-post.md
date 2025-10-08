@@ -1,7 +1,7 @@
 ---
 title: Eleventy (11ty) 入门指南 - 2025 年最新 YouTube 资源
 date: 2025-10-06T00:00:00.000Z
-layout: post
+layout: post.njk
 description: >-
   Discover the best YouTube tutorials for learning Eleventy in 2025. This
   curated guide features beginner-friendly channels and videos to help you build

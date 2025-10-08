@@ -111,7 +111,7 @@ jobs:
 ---
 title: "我的未来文章"
 date: 2099-01-01 # 这是一个未来的日期
-layout: post
+layout: post.njk
 ---
 ```
 

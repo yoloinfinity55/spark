@@ -1,0 +1,99 @@
+---
+layout: base.njk
+title: Search
+---
+<div class="max-w-3xl mx-auto py-12 px-4">
+  <h1 class="text-4xl font-bold mb-6 gradient-text">Search Blog</h1>
+  <input 
+    id="search-input" 
+    type="text" 
+    placeholder="Search posts..." 
+    class="w-full p-3 rounded-lg border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none mb-6"
+  >
+  <div id="search-results" class="space-y-6"></div>
+  <div id="no-results" class="hidden text-slate-600 text-center py-8">
+    No posts found. Try a different search term.
+  </div>
+</div>
+
+<script type="module">
+  let searchData = [];
+  
+  // Fetch the search index
+  fetch('{{ "/search-index.json" | url }}')
+    .then(res => res.json())
+    .then(data => {
+      searchData = data;
+      console.log(`Loaded ${searchData.length} posts for search`);
+    })
+    .catch(err => {
+      console.error('Failed to load search index:', err);
+    });
+  
+  const input = document.getElementById('search-input');
+  const resultsDiv = document.getElementById('search-results');
+  const noResults = document.getElementById('no-results');
+  
+  // Simple search function
+  function searchPosts(query) {
+    const lowerQuery = query.toLowerCase().trim();
+    
+    if (!lowerQuery) return [];
+    
+    return searchData.filter(post => {
+      return (
+        post.title?.toLowerCase().includes(lowerQuery) ||
+        post.description?.toLowerCase().includes(lowerQuery) ||
+        post.content?.toLowerCase().includes(lowerQuery)
+      );
+    });
+  }
+  
+  // Display search results
+  function displayResults(results) {
+    resultsDiv.innerHTML = '';
+    
+    if (results.length === 0) {
+      noResults.classList.remove('hidden');
+      return;
+    }
+    
+    noResults.classList.add('hidden');
+    
+    results.forEach(post => {
+      const article = document.createElement('article');
+      article.className = 'glass-card p-6 rounded-xl hover:shadow-lg transition-shadow duration-300';
+      
+      article.innerHTML = `
+        <h2 class="text-xl font-bold mb-2">
+          <a href="${post.url}" class="text-slate-800 hover:text-indigo-600 transition-colors">
+            ${post.title}
+          </a>
+        </h2>
+        <p class="text-slate-600 mb-3">${post.description}</p>
+        <a href="${post.url}" class="text-indigo-600 hover:text-indigo-700 font-medium text-sm">
+          Read more →
+        </a>
+      `;
+      
+      resultsDiv.appendChild(article);
+    });
+  }
+  
+  // Handle search input
+  input.addEventListener('input', (e) => {
+    const query = e.target.value;
+    
+    if (!query.trim()) {
+      resultsDiv.innerHTML = '';
+      noResults.classList.add('hidden');
+      return;
+    }
+    
+    const results = searchPosts(query);
+    displayResults(results);
+  });
+  
+  // Focus on search input when page loads
+  input.focus();
+</script>
