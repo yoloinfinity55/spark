@@ -6,6 +6,8 @@ description: >-
   Discover the best YouTube tutorials for learning Eleventy in 2025. This
   curated guide features beginner-friendly channels and videos to help you build
   your first static site quickly.
+author: "Infinity Spark"
+readingTime: "3 min read"
 ---
 
 🎯 **Eleventy (11ty) 入门指南 - 2025 年最新 YouTube 资源**

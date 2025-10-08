@@ -5,6 +5,8 @@ date: 2025-10-06T00:00:00.000Z
 description: >-
   A curated list of 30 new and updated Eleventy tutorials for beginners. Your
   go-to guide for building fast, modern static sites in 2025.
+author: "Infinity Spark"
+readingTime: "5 min read"
 ---
 # 30 Newest Eleventy (11ty) Beginner Tutorials for 2025
 

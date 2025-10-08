@@ -22,25 +22,6 @@ export default function (eleventyConfig) {
     }
   });
 
-  // Process Tailwind CSS before each Eleventy build
-  eleventyConfig.on('eleventy.before', async () => {
-    const tailwindInputPath = path.resolve('./src/css/input.css');
-    const tailwindOutputPath = './_site/css/styles.css';
-    const cssContent = fs.readFileSync(tailwindInputPath, 'utf8');
-    const outputDir = path.dirname(tailwindOutputPath);
-    
-    if (!fs.existsSync(outputDir)) {
-      fs.mkdirSync(outputDir, { recursive: true });
-    }
-    
-    const result = await processor.process(cssContent, {
-      from: tailwindInputPath,
-      to: tailwindOutputPath,
-    });
-    
-    fs.writeFileSync(tailwindOutputPath, result.css);
-  });
-
   // Add filter to strip HTML tags
   eleventyConfig.addFilter("striptags", function(content) {
     return (content || "")

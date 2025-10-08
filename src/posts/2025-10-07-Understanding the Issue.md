@@ -6,6 +6,8 @@ description: >-
   Fix linter warnings by replacing inline `animation-delay` styles with custom
   Tailwind CSS utilities. A simple guide to cleaner, more maintainable code for
   your Eleventy project.
+author: "Infinity Spark"
+readingTime: "4 min read"
 ---
 
 ### Understanding the Issue

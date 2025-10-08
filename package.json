@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "ELEVENTY_ENV=production eleventy",
-    "start": "eleventy --serve",
-    "dev": "eleventy --serve",
+    "build:css": "postcss src/css/input.css -o _site/css/styles.css",
+    "watch:css": "postcss src/css/input.css -o _site/css/styles.css --watch",
+    "build:eleventy": "eleventy",
+    "build": "ELEVENTY_ENV=production npm-run-all build:css build:eleventy",
+    "serve": "eleventy --serve",
+    "dev": "npm-run-all --parallel watch:css serve",
+    "start": "npm run dev",
     "generate:descriptions": "node generate-descriptions.js"
   },
   "keywords": [],
@@ -17,7 +21,9 @@
     "@11ty/eleventy": "^3.1.2",
     "@tailwindcss/postcss": "^4.1.14",
     "cssnano": "^7.1.1",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.0",
     "tailwindcss": "^4.1.14"
   },
   "dependencies": {
