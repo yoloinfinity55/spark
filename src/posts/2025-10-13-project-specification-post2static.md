@@ -1,10 +1,12 @@
-
-Title: Project Specification: Post2Static
-Date: 2025-10-13
-Author: minijohn
-Tags: project, specification, pelican, python, postgresql
-Slug: project-specification-post2static
-Summary: A detailed specification of the Post2Static project, a static site generator powered by Pelican and PostgreSQL.
+---
+title: Project Specification Post2Static
+date: 2025-10-18T00:00:00.000Z
+layout: post.njk
+description: >-
+  A detailed specification of the Post2Static project, a static site generator powered by Pelican and PostgreSQL.
+author: "Infinity Spark"
+readingTime: "4 min read"
+---
 
 ## Introduction
 

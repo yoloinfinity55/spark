@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>将 Eleventy 网站部署到 GitHub Pages 的常见问题解析 - Spark Blog</title>
   <meta name="description" content="解决将 Eleventy 网站部署到 GitHub Pages 时遇到的常见问题，包括分支设置、令牌配置和文章链接 404 错误。">
-  <link rel="stylesheet" href="/spark/css/styles.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body class="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 antialiased min-h-screen">
   
@@ -19,18 +19,18 @@
   <nav class="glass-effect sticky top-0 z-50 border-b border-white/20 backdrop-blur-md">
   <div class="max-w-6xl mx-auto px-4 py-5 flex justify-between items-center">
     <!-- Logo -->
-    <a href="/spark/" class="text-3xl font-bold gradient-text animate-fade-in">
+    <a href="/" class="text-3xl font-bold gradient-text animate-fade-in">
       ⚡ Spark Blog
     </a>
     <!-- Navbar links -->
     <div class="flex items-center space-x-1">
-      <a href="/spark/" class="px-4 py-2 text-slate-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-lg hover:bg-white/50">
+      <a href="/" class="px-4 py-2 text-slate-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-lg hover:bg-white/50">
         Blog
       </a>
-      <a href="/spark/about" class="px-4 py-2 text-slate-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-lg hover:bg-white/50">
+      <a href="/about" class="px-4 py-2 text-slate-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-lg hover:bg-white/50">
         About
       </a>
-      <a href="/spark/search" class="px-4 py-2 text-slate-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-lg hover:bg-white/50">
+      <a href="/search" class="px-4 py-2 text-slate-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-lg hover:bg-white/50">
         Search
       </a>
       <a href="https://twitter.com/mydailylivemail" target="_blank" class="px-4 py-2 text-slate-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-lg hover:bg-white/50">
@@ -39,7 +39,7 @@
       <a href="https://github.com/yoloinfinity55" target="_blank" class="px-4 py-2 text-slate-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-lg hover:bg-white/50">
         GitHub
       </a>
-      <a href="/spark/rss.xml" class="px-4 py-2 text-slate-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-lg hover:bg-white/50">
+      <a href="/rss.xml" class="px-4 py-2 text-slate-700 hover:text-indigo-600 font-medium transition-colors duration-200 rounded-lg hover:bg-white/50">
         RSS
       </a>
     </div>
@@ -185,7 +185,7 @@ layout: post.njk
 
     <!-- Navigation -->
     <div class="flex flex-col sm:flex-row justify-between items-center gap-6">
-      <a href="/spark/" class="btn-secondary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group">
+      <a href="/" class="btn-secondary text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center group">
         <svg class="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
         </svg>
